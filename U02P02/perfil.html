@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <h1>Perfil</h1>
+    <title>Registro</title>
+    <h1>Ingrese sus datos</h1>
 </head>
 <body>
-    
+    <form action="/action.php">
+        <fieldset>
+            <legend>Registro</legend>
+            <input type="text" value="ESTUDIANTE" size="40" readonly><br>
+            <label for="nameAndSurname">Ingrese su nombre y apellido</label><br>
+            <input type="text" placeholder="Nombre y Apellido" id="nameAndSurname" name="Nombre">
+            <br>
+            <label for="Email">Ingrese un correo electronico</label><br>
+            <input type="text" placeholder="Correo electronico" id="Email" name="Email">
+            <br>
+            <label for="edad">Ingrese su edad</label><br>
+            <input type="date" placeholder="Edad" id="edad" name="edad">
+            <br>
+            <label for="nacion">Seleccione pais</label><br>
+            <select id="nacion" name="nacion">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="Perú">Perú</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Uruguay">Uruguay</option>
+               
+            </select>
+            <br>
+            <label for="job">Seleccione su condicion laboral</label><br>
+            <select id="job" name="job">
+                <option value="desempleado">Desempleado</option>
+                <option value="buscando">En búsqueda laboral</option>
+                <option value="part-time">Part-time</option>
+                <option value="full-time">Full-time</option>
+            </select>
+            <fieldset>
+                <legend>Gustos personales</legend>
+                <label for="GMusica">Ingrese sus gustos musicales</label><br>
+                <input type="text" placeholder="" id="GMusica" name="GMusica" size="60">
+                <br>
+                <label for="food">Seleccione su comida favorita</label><br>
+                    <select id="food" name="food">
+                        <option value="milanga">Milanesa</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="hamburguesa">Hamburguesa</option>
+                        <option value="asado">Asado</option>
+                    </select>
+            </fieldset>
+            <label for="check">Recordar datos del usuario</label>
+            <input type="checkbox" name="check" id="check">
+            <br>
+            <input type="submit" value="Enviar" name="subt" id="subt">
+        </fieldset>
+    </form>
 </body>
 </html>
